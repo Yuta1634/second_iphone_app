@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var sayHello: UIButton!
+    @IBAction func sayHello(_ sender: UIButton) {
+        label.text = "こんにちは"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

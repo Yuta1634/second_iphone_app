@@ -15,28 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0l-c0-t6G">
-                                <rect key="frame" x="186" y="250" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPp-7b-kTO">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vse-4c-Q8K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPO-Jw-c2o">
+                                <rect key="frame" x="186" y="232" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9u3-Vj-gB2">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="P0l-c0-t6G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uie-Jr-gmp"/>
-                            <constraint firstItem="9u3-Vj-gB2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mSh-hX-5bw"/>
-                            <constraint firstItem="P0l-c0-t6G" firstAttribute="centerX" secondItem="9u3-Vj-gB2" secondAttribute="centerX" id="mwU-97-3VD"/>
+                            <constraint firstItem="yPO-Jw-c2o" firstAttribute="centerX" secondItem="SPp-7b-kTO" secondAttribute="centerX" id="M7M-b8-Yi9"/>
+                            <constraint firstItem="yPO-Jw-c2o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="Rnh-cf-ZfL"/>
+                            <constraint firstItem="yPO-Jw-c2o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wcy-TI-xuq"/>
+                            <constraint firstItem="SPp-7b-kTO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zXT-ub-eHW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="P0l-c0-t6G" id="kJm-Wy-5jC"/>
-                        <outlet property="sayHello" destination="9u3-Vj-gB2" id="jNK-aV-UMH"/>
+                        <outlet property="label" destination="yPO-Jw-c2o" id="byu-AV-KHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
